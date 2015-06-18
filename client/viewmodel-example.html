@@ -1,0 +1,14 @@
+<head>
+  <title>viewmodel-example</title>
+</head>
+
+<body>
+  <h1>Viewmodel flickering!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <p data-bind="if: show" style="background-color: red; height: 400px; width: 400px;">Do not show.</p>
+  <p data-bind="if: showThis" style="background-color: green; height: 400px; width: 400px;">Do not show this.</p>  
+</template>
